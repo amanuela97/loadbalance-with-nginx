@@ -1,0 +1,22 @@
+services:
+  backend-1:
+    image: backend-1-image
+    container_name: backend-1-container
+    build: ./backend-1
+    ports:
+      - 3000:3000
+  backend-2:
+    image: backend-2-image
+    container_name: backend-2-container
+    build: ./backend-2
+    ports:
+      - 4000:4000
+  nginx:
+    image: nginx-loadbalancer-image
+    container_name: nginx-loadbalancer-container
+    build: ./nginx
+    ports:
+      - 80:80
+    depends_on:
+      - backend-1
+      - backend-2
