@@ -3,7 +3,7 @@
 ## To get started with this project, you will need to have Docker and Docker Compose installed on your machine.
 
 - Clone the repository
-  `git clone https://github.com/amanuel97/loadbalance-with-nginx.git`
+  `git clone https://github.com/amanuela97/loadbalance-with-nginx.git`
 - Navigate to the project directory
   `cd loadbalance-with-nginx`
 - Start the application
