@@ -6,8 +6,9 @@
   `git clone https://github.com/amanuela97/loadbalance-with-nginx.git`
 - Navigate to the project directory
   `cd loadbalance-with-nginx`
-- Start the application
+- Start the application with
   `docker-compose up -d`
+- If you have **make** installed locally, then run the commands inside the makefile: `make launch-containers` etc.
 - This will start the Node.js application and the Nginx load balancer. You can access the application by navigating to http://localhost:80.
 
 # The following load balancing mechanisms (or methods) are supported in nginx:
